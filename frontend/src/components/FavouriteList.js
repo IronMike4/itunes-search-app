@@ -7,7 +7,7 @@ const FavouriteList = ({ favourites, onRemoveFavourite }) => {
   return (
     <div id="favourites-list" className="mt-5">
       {/* Title for the favourites section */}
-      <h2>Your Favourites</h2>
+      <h2 className="heading-spacing">Your Favourites</h2>
       <Row>
         {/* Iterate over the list of favourites and render each item */}
         {favourites.map((item, index) => (

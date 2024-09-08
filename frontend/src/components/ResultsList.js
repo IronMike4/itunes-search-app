@@ -6,6 +6,8 @@ import "./ResultsList.css";
 const ResultsList = ({ results, onAddFavourite }) => {
   return (
     <Row>
+      {/* Add spacing below the heading */}
+      <h2 className="heading-spacing">Search Results</h2>
       {/* Iterate over the list of search results and render each item */}
       {results.map((result, index) => (
         <Col md={4} key={index} className="mb-4">

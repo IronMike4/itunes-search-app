@@ -1,9 +1,11 @@
-/* Smooth transition for transform and box-shadow effects */
+/* Define transition effects for hover */
 .hover-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions for transform and box-shadow */
+    z-index: 1; /* Ensure cards are below headings */
 }
 
-/* Hover effect to slightly scale up the card and add shadow */
+/* Styles for hover effect on the card */
 .hover-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -12,5 +14,10 @@
 
 /* Add spacing below each card */
 .card-spacing {
+    margin-bottom: 20px;
+}
+
+/* Add padding to headings to ensure spacing */
+.heading-spacing {
     margin-bottom: 20px;
 }

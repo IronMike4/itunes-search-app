@@ -2,6 +2,7 @@
 .hover-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     /* Smooth transitions for transform and box-shadow */
+    z-index: 1; /* Ensure cards are below headings */
 }
 
 /* Styles for hover effect on the card */
@@ -14,4 +15,9 @@
 /* Add spacing below each card */
 .card-spacing {
     margin-bottom: 20px;
+}
+
+/* Add padding to headings to ensure spacing */
+.heading-spacing {
+    margin-bottom: 20px; /* Space between heading and content */
 }

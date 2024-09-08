@@ -136,7 +136,13 @@ const App = () => {
                 Favourites
               </Nav.Link>
             </Nav>
-            <Button onClick={() => setDarkMode(!darkMode)} className="ms-2">
+            <Button
+              onClick={() => {
+                setDarkMode(!darkMode);
+                setNavExpanded(false); // Close the navbar when dark/light mode is toggled
+              }}
+              className="ms-2"
+            >
               {darkMode ? "Light Mode" : "Dark Mode"}
             </Button>
           </Navbar.Collapse>
@@ -156,7 +162,6 @@ const App = () => {
           ) : (
             <>
               <div className="my-4">
-                <h3>Results</h3>
                 <ResultsList
                   results={results}
                   onAddFavourite={handleAddFavourite}

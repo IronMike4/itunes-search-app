@@ -50,7 +50,6 @@ router.get("/search", authenticateToken, async (req, res) => {
     res.json(response.data);
   } catch (error) {
     // Handle errors from the API request
-    console.error("Error fetching data:", error.message);
     res.status(500).json({ error: "Failed to fetch data" }); // Internal Server Error
   }
 });
