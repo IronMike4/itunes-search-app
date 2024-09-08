@@ -1,0 +1,17 @@
+/* Define transition effects for hover */
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions for transform and box-shadow */
+}
+
+/* Styles for hover effect on the card */
+.hover-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Add spacing below each card */
+.card-spacing {
+    margin-bottom: 20px;
+}
